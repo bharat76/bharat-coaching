@@ -8,13 +8,16 @@ function handleCalendarSignIn(response) {
     return;
   }
   localStorage.setItem("calendarAuthed", "true");
-  const gate = document.getElementById("calendar-signin");
-  if (gate) gate.hidden = true;
   const link = document.getElementById("calendar-link");
+  const gate = document.getElementById("calendar-signin");
   if (link) {
     link.href = link.dataset.calHref;
     link.target = "_blank";
-    window.open(link.dataset.calHref, "_blank", "noopener");
+  }
+  if (gate && link) {
+    gate.innerHTML =
+      '<p>You\'re verified &mdash; tap below to open your calendar.</p>' +
+      '<a class="cta" href="' + link.dataset.calHref + '" target="_blank" rel="noopener">Open Calendar &rarr;</a>';
   }
 }
 
