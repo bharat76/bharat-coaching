@@ -146,10 +146,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
-.contact .cta {
+.contact-links .cta {
   margin-top: 0;
 }
 
