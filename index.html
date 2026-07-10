@@ -6,6 +6,7 @@
 <title>Bharat &mdash; Tech Career Coaching | bharat.76@gmail.com</title>
 <meta name="description" content="1:1 coaching and counselling to help engineers and tech professionals excel in their careers.">
 <link rel="stylesheet" href="styles.css">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
 
@@ -45,8 +46,17 @@
     </div>
     <div id="contact" class="contact-links">
       <a class="cta" href="mailto:bharat.76@gmail.com?subject=Interested%20in%20coaching">Email</a>
-      <a class="cta cta-secondary" href="https://calendar.app.google/iEWHCBJwum9GwFDN7" target="_blank" rel="noopener">Calendar</a>
+      <a id="calendar-link" class="cta cta-secondary" href="#" data-cal-href="https://calendar.app.google/iEWHCBJwum9GwFDN7" rel="noopener">Calendar</a>
       <a class="cta cta-secondary" href="https://www.linkedin.com/in/bharatbhushan76/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <div id="g_id_onload"
+         data-client_id="126352222632-0evic5r6luh3ibg8qka6a2e2tqd17744.apps.googleusercontent.com"
+         data-callback="handleCalendarSignIn">
+    </div>
+    <div id="calendar-signin" class="signin-gate" hidden>
+      <p>Sign in with Google to book a call &mdash; this just keeps the booking link free of bots and spam.</p>
+      <div class="g_id_signin" data-type="standard" data-size="medium"></div>
     </div>
   </section>
 

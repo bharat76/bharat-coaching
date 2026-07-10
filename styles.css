@@ -159,6 +159,19 @@ h1 {
   border: 1px solid var(--border);
 }
 
+.signin-gate {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.signin-gate p {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 24px;
